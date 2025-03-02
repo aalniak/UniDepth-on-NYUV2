@@ -14,7 +14,10 @@ from PIL import Image
 from datasets import load_dataset
 from sklearn.metrics import mean_squared_error
 from unidepth.models import UniDepthV1, UniDepthV2
+import os
 
+home_dir = os.environ["HOME"] # to save the nyu_cache
+print(home_dir)
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Depth Estimation using UniDepthV1 or UniDepthV2")
@@ -112,7 +115,7 @@ if __name__ == "__main__":
     print(f"Loading model: UniDepth {args.model}")
     model = load_model(args.model)
     
-    dataset = load_dataset("sayakpaul/nyu_depth_v2", split="train[:40000]", cache_dir="/home/arda/nyu_cache")
-    dataset = dataset.select(range(0, 40000, 40))  # Sample dataset
+    dataset = load_dataset("sayakpaul/nyu_depth_v2", split="train[:40000]", cache_dir=home_dir+"/nyu_cache")
+    #dataset = dataset.select(range(0, 40000, 40))  # Sample dataset
     
     process_dataset(dataset, model)
