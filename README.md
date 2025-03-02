@@ -16,6 +16,7 @@ bash v2_test.sh
 
 ## About the code
 Once you run the script, it will try to download the dataset under /home/{your_username}/nyu_cache. All my scripts use the cache there, so if you already have it please move the dataset to there.  
+  
 It is further possible to change the dataset sampling by:  
 
 ```python
