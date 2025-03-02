@@ -95,10 +95,10 @@ def process_dataset(dataset, model):
             total_metrics[key] += metrics[key]
         
         num_samples += 1
-        print(f"Unique ID (Scene Name): {sample.get('scene', 'Unknown')}")
-        print(f"Depth Map Hash: {hash(gt_depth.tobytes())}")  # Ensure unique depth values
+        #print(f"Unique ID (Scene Name): {sample.get('scene', 'Unknown')}")
+        #print(f"Depth Map Hash: {hash(gt_depth.tobytes())}")  # Ensure unique depth values
         print(f"Metrics: {metrics}")
-        print(f"Inference Time: {end - start:.4f} seconds")
+        print(f"Inference Time for the sample: {end - start:.4f} seconds")
     
     # Compute average metrics
     avg_metrics = {key: total_metrics[key] / num_samples for key in total_metrics}
