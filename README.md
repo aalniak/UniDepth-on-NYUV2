@@ -20,12 +20,13 @@ Once you run the script, it will try to download the dataset under /home/{your_u
 It is further possible to change the dataset sampling by:  
 
 ```python
-dataset = load_dataset("sayakpaul/nyu_depth_v2", split="train[:40000]", cache_dir="/home/") # Loads the dataset
+dataset = load_dataset("sayakpaul/nyu_depth_v2", split="train[:40000]", cache_dir=home_dir+"/nyu_cache") # Loads the dataset
 dataset = dataset.select(range(0, 40000, 40))  # Samples every 40th data
 ```
 
 
 
 ## Acknowledgment
-This work is based on [UniDepth](https://github.com/lpiccinelli-eth/UniDepth), developed by [Luigi Picinelli](https://github.com/lpiccinelli-eth).
+This work is based on [UniDepth](https://github.com/lpiccinelli-eth/UniDepth), developed by [Luigi Picinelli](https://github.com/lpiccinelli-eth).    
+Dataset used can be found at [here](https://huggingface.co/datasets/sayakpaul/nyu_depth_v2).
 
