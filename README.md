@@ -2,7 +2,7 @@
 This repository contains a Python script built on top of [UniDepth](https://github.com/lpiccinelli-eth/UniDepth).
 
 Running this repository requires a correctly set-up Unidepth environment.
-In order to run the scripts: 
+In order to run the scripts:   
 1- Clone the repository [here](https://github.com/lpiccinelli-eth/UniDepth) and create environment / install requirements as described there.  
 2- Change the environment name in .sh files (If you went with the suggested name Unidepth, this step is not required).  
 3- Run the respective script using:  
