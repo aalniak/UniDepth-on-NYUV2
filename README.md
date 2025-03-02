@@ -22,5 +22,5 @@ dataset = dataset.select(range(0, 40000, 40))  # Samples every 40th data
 ```
 
 ## Acknowledgment
-This work is based on [UniDepth], developed by [Luigi Picinelli].
+This work is based on [UniDepth](https://github.com/lpiccinelli-eth/UniDepth), developed by [Luigi Picinelli](https://github.com/lpiccinelli-eth).
 
