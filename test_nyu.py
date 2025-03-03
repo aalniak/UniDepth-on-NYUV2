@@ -115,7 +115,7 @@ if __name__ == "__main__":
     print(f"Loading model: UniDepth {args.model}")
     model = load_model(args.model)
     
-    dataset = load_dataset("sayakpaul/nyu_depth_v2", split="train[:40000]", cache_dir=home_dir+"/nyu_cache")
-    #dataset = dataset.select(range(0, 40000, 40))  # Sample dataset
+    dataset = load_dataset("sayakpaul/nyu_depth_v2", split="validation[:654]", cache_dir=home_dir+"/nyu_cache")
+    #dataset = dataset.select(range(0, 654, 6))  # Sample every 6th data in dataset
     
     process_dataset(dataset, model)
