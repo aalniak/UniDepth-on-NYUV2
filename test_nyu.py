@@ -1,7 +1,4 @@
 """
-Script Name: my_script.py
-Author: Your Name
-Date: YYYY-MM-DD
 
 This script is built on top of 'UniDepth & UniDepthV2' (https://github.com/lpiccinelli-eth/UniDepth).
 All credit for the base functionality goes to the original developers.
